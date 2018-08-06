@@ -11,14 +11,6 @@ class RegistrationForm extends React.Component {
         confirmDirty: false,
         autoCompleteResult: [],
     };
-    // handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     this.props.form.validateFieldsAndScroll((err, values) => {
-    //         if (!err) {
-    //             console.log('Received values of form: ', values);
-    //         }
-    //     });
-    // }
 
     handleSubmit = (e) => {
         e.preventDefault();
@@ -40,22 +32,6 @@ class RegistrationForm extends React.Component {
                     }).catch((error) => {
                         console.log(error);
                     });
-
-                // $.ajax({
-                //     url: `${API_ROOT}/signup`,
-                //     method: 'POST',
-                //     data: JSON.stringify({
-                //         username: values.username,
-                //         password: values.password,
-                //     })
-                // }).then((response) => {
-                //     message.success(response);
-                // }, (response) => {
-                //     message.error(response.responseText);
-                // }).catch((error) => {
-                //     console.log(error);
-                // });
-
             }
         });
     }

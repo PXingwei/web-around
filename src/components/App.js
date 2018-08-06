@@ -6,9 +6,6 @@ import {TOKEN_KEY} from '../constant'
 
 class App extends Component {
     state = {
-        //not appropriate
-        // isLoggedIn: false,
-
         // isLoggedIn: !!localStorage.getItem((TOKEN_KEY)),
         isLoggedIn: Boolean(localStorage.getItem((TOKEN_KEY))),
     }
